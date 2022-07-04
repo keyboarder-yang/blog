@@ -6,9 +6,6 @@ set -e
 
 # build
 npm run docs:build
-git init
-git add -A
-git commit -m '版本更新'
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 # 删除远程分支

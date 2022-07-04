@@ -4,7 +4,7 @@ import methods from "./methodsMenuMap";
 export default {
     // 根据github仓库映射的地址后缀
     // https://github.com/keyboarder-yang.github.io/vitepress-blog
-    base: '/vitepress-blog',
+    base: '/blog',
     // 浏览器上的标签
     title: 'keyboarder-yang', // 所有文档的浏览器标签title
     description: 'keyboarder-yang`s blog', // 会渲染成<meta>标签，SEO用
