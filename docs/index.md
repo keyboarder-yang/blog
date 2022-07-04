@@ -10,7 +10,7 @@ hero:
       link: /files/
     - theme: alt
       text: GitHub 查看
-      link: https://github.com/keyboarder-yang/vitepress-blog.git
+      link: https://github.com/keyboarder-yang/blog.git
 
 features:
   - title: "个人博客"
