@@ -3,10 +3,15 @@
 // methods：label 表示该类别的子类在侧边栏显示的名称
 // methods：name 表示md文档的名称
 const methods = {
-    'JavaScript': {
-        sidebarName: '',
-        label: ['测试'],
-        name: ['index'],
+    'Object': {
+        sidebarName: '对象',
+        label: ['getDataFromObject', 'deepClone'],
+        name: ['getDataFromObject', 'deepClone'],
+    },
+    'Common': {
+        sidebarName: '实用方法',
+        label: ['dataToTree', 'saveAsJson', 'timeCount'],
+        name: ['dataToTree', 'saveAsJson', 'timeCount'],
     },
 }
 export default methods
