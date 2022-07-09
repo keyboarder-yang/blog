@@ -21,7 +21,7 @@ const files = {
         label: ['设计模式', '工厂模式', '观察者模式', '单例模式', '策略模式'],
         name: ['index', 'FactoryPattern', 'ObservePattern', 'SingletonPattern', 'StrategyPattern'],
     },
-    'Dayjs': {
+    'DayJs': {
         label: ['dayjs常用命令'],
         name: ['CommonCommand'],
     },
