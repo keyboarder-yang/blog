@@ -5,8 +5,8 @@
 const files = {
     'JavaScript': {
         sidebarName: '',
-        label: ['数组遍历', '类', '闭包', '数据类型', '解构', '事件循环', '原型', '递归', '正则', 'this', '时间计数', '树遍历'],
-        name: ['arrayTraversal', 'Class', 'Closure', 'DataType', 'deconstruct', 'EventLoop', 'Prototype', 'Recursion', 'RegExp', 'This', 'TimeCount', 'TreeTraversal'],
+        label: ['数组遍历', '类', '闭包', '数据类型', '解构', '事件循环', '原型', '递归', '正则', 'this', 'new关键字', '时间计数', '树遍历'],
+        name: ['arrayTraversal', 'Class', 'Closure', 'DataType', 'deconstruct', 'EventLoop', 'Prototype', 'Recursion', 'RegExp', 'This', 'New', 'TimeCount', 'TreeTraversal'],
     },
     'Vue': {
         label: ['render函数', '插槽', '数据持久化存储'],
