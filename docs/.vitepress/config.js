@@ -11,15 +11,20 @@ export default {
     themeConfig: {
         siteTitle: 'keyboarder-yang',
         logo: '/logo.png',
+        level: 4,
         nav: [
             {
-                text: 'About Me',
+                text: '主页',
+                link: '/files/index'
+            },
+            {
+                text: '关于我',
                 items: [
                     { text: '我的简历（开发中）', link: 'https://keyboarder-yang.github.io/my-resume/' },
                     { text: '个人组件库（开发中）', link: 'https://keyboarder-yang.github.io/my-methods/' },
-                    { text: '个人方法集合（开发中）', link: '/methods/index' }
+                    { text: '个人方法集合（持续更新）', link: '/methods/index' }
                 ]
-            }
+            },
         ],
         sidebar: {
             '/files/': getMenus(files,'/files'),
