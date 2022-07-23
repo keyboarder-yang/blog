@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./app.ad1f528a.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"files/TypeScript/Interface.md"}'),a={name:"files/TypeScript/Interface.md"};function c(n,s,o,p,i,f){return r(),t("div")}var l=e(a,[["render",c]]);export{d as __pageData,l as default};
