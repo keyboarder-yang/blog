@@ -5,13 +5,18 @@
 const methods = {
     'Object': {
         sidebarName: '对象',
-        label: ['getDataFromObject', 'deepClone'],
+        label: ['从对象中获取指定属性', '深克隆'],
         name: ['getDataFromObject', 'deepClone'],
     },
     'Common': {
         sidebarName: '实用方法',
-        label: ['dataToTree', 'saveAsJson', 'timeCount'],
+        label: ['扁平数据树结构化', '保存为Json', '时间计数'],
         name: ['dataToTree', 'saveAsJson', 'timeCount'],
     },
+    'Tree': {
+        sidebarName: '树操作相关',
+        label: ['树数据过滤', '树数据遍历'],
+        name: ['treeFilter', 'treeTraverse'],
+    }
 }
 export default methods
