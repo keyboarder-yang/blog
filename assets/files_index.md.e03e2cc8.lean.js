@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a as o}from"./app.535ceea2.js";const m=JSON.parse('{"title":"\u7CBE\u5F69\u4ECE\u6B64\u5F00\u59CB...","description":"","frontmatter":{},"headers":[],"relativePath":"files/index.md"}'),s={name:"files/index.md"},r=o("",3),c=[r];function i(n,_,d,l,p,h){return a(),t("div",null,c)}var u=e(s,[["render",i]]);export{m as __pageData,u as default};
