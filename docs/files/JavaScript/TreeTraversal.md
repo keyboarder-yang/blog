@@ -8,9 +8,9 @@ categories: JavaScript
 
 
 
-#### 树的遍历方式
+# 树的遍历方式
 
-##### 1. 深度优先搜索（depth-first-search）
+## 深度优先搜索（depth-first-search）
 
 > 从根节点触发，尽可能深的搜索树的结点
 >
@@ -24,15 +24,15 @@ categories: JavaScript
 
   > 先序、中序、后序都是以 根节点来定义的。
 
-##### 2. 广度优先搜索（breath-first-search）
+## 广度优先搜索（breath-first-search）
 
 > 简单的说，广度优先搜索是从根节点开始，沿着树的宽度遍历树的节点。如果所有节点均被访问，则算法中止。
 
-#### 实现
+## 具体实现
 
 > 在JavaScript中，数据一般都不会是二叉树，所以中序就没了实际的意义。所以以下都是基于整个树的遍历，而非特定的二叉树：
 
-##### 1. dfs-先序-递归
+### 1. dfs-先序-递归
 
 > 思想：先遍历根节点再遍历子节点（左右节点）
 
@@ -46,7 +46,7 @@ function readNodes(nodes = [], callback) {
 }
 ```
 
-##### 2. dfs-后序-递归
+### 2. dfs-后序-递归
 
 > 思想：先遍历子节点（左右节点）再遍历根节点
 
@@ -60,7 +60,7 @@ function readNodes(nodes = [], callback) {
 }
 ```
 
-##### 3. dfs-循环
+### 3. dfs-循环
 
 > 思想：维护一个数组，先把所有根节点放入该数组，当数组中有值时，一直执行
 >
@@ -80,7 +80,7 @@ function readNodes(tree, callback) {
 }
 ```
 
-##### 4. bfs-循环
+### 4. bfs-循环
 
 ```javascript
 function readNodes(tree, callback) {

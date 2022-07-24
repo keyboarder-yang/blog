@@ -11,7 +11,6 @@ export default {
     themeConfig: {
         siteTitle: 'keyboarder-yang',
         logo: '/logo.png',
-        level: 4,
         nav: [
             {
                 text: '主页',

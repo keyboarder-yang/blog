@@ -5,16 +5,20 @@ tags: js 计数器
 summary: 自定义定时器，返回计时结果
 categories: JavaScript
 ---
-### 说明
-> 用于实现计时功能(可在callback中接收当前值，并执行相应操作或者结束计时)，接收两个参数 params(Object)和callback;
-1. params: 为一个对象
-   + startVal: 初始值-默认`60`
-   + endVal: 结束值-默认`0`
-   + valSetp: 步长,正数则正计时,负数倒计时-默认`-1`
-   + timerStep: 周期定时器的时间步长-默认`1000`
-2. callback: 为一个回调函数,接收一个当前值的参数。返回若为`true`则终止计时。
+# 自定义计时器函数
+
+## 说明
+
+用于实现计时功能(可在callback中接收当前值，并执行相应操作或者结束计时)，接收两个参数 **params**(Object)和**callback**;
+
+1. **params**: 为一个对象
+   + **startVal**: 初始值-默认`60`
+   + **endVal**: 结束值-默认`0`
+   + **valSetp**: 步长,正数则正计时,负数倒计时-默认`-1`
+   + **timerStep**: 周期定时器的时间步长-默认`1000`
+2. **callback**: 为一个回调函数,接收一个当前值的参数。返回若为`true`则终止计时。
 > 注意：callback若有返回值（无论什么值）,则endVal会失效
-### 代码实现
+## 代码实现
 ```
 /**
  * 描述: 计时器
