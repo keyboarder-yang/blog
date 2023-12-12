@@ -3,7 +3,7 @@ title: css学习
 date: 2022-12-17 13:09:55
 tags: BEM 规范
 summary: BEM命名规范
-categories: CSS
+categories: ['css']
 ---
 
 # BEM命名规范

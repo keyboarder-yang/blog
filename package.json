@@ -11,12 +11,15 @@
     "release": "standard-version && git push --follow-tags"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-beta.6",
+    "@vicons/fa": "^0.12.0",
+    "naive-ui": "^2.35.0",
+    "vitepress": "^1.0.0-rc.31",
     "vue": "^3.2.37"
   },
   "dependencies": {
     "commitizen": "^4.3.0",
     "cz-customizable": "^7.0.0",
+    "sass": "^1.69.5",
     "standard-version": "^9.5.0"
   },
   "config": {

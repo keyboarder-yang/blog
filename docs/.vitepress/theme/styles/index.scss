@@ -1,0 +1,28 @@
+
+@import "./vars";
+@import './scrollbar.scss';
+
+.Layout {
+  &::before {
+    content: '';
+    inset: 0;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background-image: url(./bg.png);
+    background-repeat: repeat;
+    min-height: 100%;
+  }
+  width: 100vw;
+  min-height: calc(100vh - var(--vp-nav-height));
+  background: radial-gradient(
+                  ellipse,
+                  rgba(var(--bg-gradient-home), 0.85) 0%,
+                  rgba(var(--bg-gradient-home), 0) 700%
+  );
+  padding-bottom: 0!important;
+}
+
+.VPHome{
+  padding: 0!important;
+}

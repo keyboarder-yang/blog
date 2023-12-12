@@ -1,21 +1,19 @@
-import getMenus from "./menu";
-import files from './articleMenuMap'
-import methods from "./methodsMenuMap";
-import literatures from "./literatureMenuMap";
+import handleMenus from "./utils/handleMenus";
+import {abouts, methods, files} from './meuns'
+
 export default {
-    // 根据github仓库映射的地址后缀
-    // https://github.com/keyboarder-yang.github.io/vitepress-blog
     base: '/blog',
-    // 浏览器上的标签
-    title: 'keyboarder-yang', // 所有文档的浏览器标签title
-    description: 'keyboarder-yang`s blog', // 会渲染成<meta>标签，SEO用
+    title: '@keyboarder-yang', // 浏览器的title
+    description: '个人前端笔记', // 会渲染成<meta>标签，SEO用
     themeConfig: {
+        inspiring: ['学问之道无他，求其放心而已矣。'],
         docFooter: {
             prev: '上一篇',
             next: '下一篇',
         },
         outlineTitle: '文章目录',
-        siteTitle: 'keyboarder-yang',
+        siteTitle: '@keyboarder-yang', // 网站标题
+        subSiteTitle: '个人前端笔记', // 网站子标题（描述）
         logo: '/logo.png',
         nav: [
             {
@@ -32,25 +30,20 @@ export default {
             },
         ],
         sidebar: {
-            '/files/': getMenus(files,'/files'),
-            '/methods/': getMenus(methods,'/methods'),
-            '/literatures/': getMenus(literatures,'/literatures'),
-			'/about/': [
-				{ text: '加入我们', link: '/about/team'},
-                { text: '更新日志', link: 'https://github.com/keyboarder-yang/blog/blob/master/CHANGELOG.md'}
-            ]
+            '/files/': handleMenus(files),
+            '/methods/': handleMenus(methods),
+            '/about/': abouts
         },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/keyboarder-yang' },
+            {icon: 'github', link: 'https://github.com/keyboarder-yang'},
         ],
 
-        footer: {
-            message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2022-07-02 keyboarder-yang'
+        // footer: {
+        //     copyright: 'Copyright © 2022-07-02 keyboarder-yang'
+        // },
+        search: {
+            provider: 'local'
         },
-				search: {
-					provider: 'local'
-				},
     }
 }
