@@ -3,6 +3,7 @@ import { User, CalendarTimes, Edit, Clock } from '@vicons/fa'
 import { useData } from 'vitepress';
 import { countWord } from "../../utils/countWord";
 export function useDocHeader() {
+    const descRef = ref(null)
     const words = ref(0)
     const readTime = ref(0)
     const { page } = useData()
@@ -21,6 +22,7 @@ export function useDocHeader() {
         readTime.value = Math.ceil((words.value / 275)) + readImageTime / 60
     }
     return {
+        descRef,
         User,
         CalendarTimes,
         Edit,
