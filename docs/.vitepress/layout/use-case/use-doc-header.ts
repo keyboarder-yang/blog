@@ -1,5 +1,5 @@
 import { ref, onMounted } from 'vue'
-import { User, CalendarTimes, Edit, Clock } from '@vicons/fa'
+import { User, CalendarTimes, Edit, Clock, Tags } from '@vicons/fa'
 import { useData } from 'vitepress';
 import { countWord } from "../../utils/countWord";
 export function useDocHeader() {
@@ -8,6 +8,10 @@ export function useDocHeader() {
     const readTime = ref(0)
     const { page } = useData()
     function getDocHeaderInfo() {
+        const descElement = document.getElementById('desc')
+        if(!descElement){
+            document.querySelector('h1').after(descRef.value)
+        }
         const docDomContainer = window.document.querySelector('#VPContent')
         const wordsContent = docDomContainer?.querySelector('.container')?.textContent || ''
         const images = docDomContainer?.querySelectorAll<HTMLImageElement>('.container img')
@@ -27,6 +31,7 @@ export function useDocHeader() {
         CalendarTimes,
         Edit,
         Clock,
+        Tags,
         words,
         readTime,
         page,

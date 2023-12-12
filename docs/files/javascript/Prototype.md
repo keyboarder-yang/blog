@@ -1,9 +1,8 @@
 ---
 title: js学习 --- 原型和原型链 
 date: 2022-06-03 14:21:21 
-tags: 原型链 
-summary: 对于原型和原型链的总结 
-categories: JavaScript
+tags: 
+  - '原型链'
 ---
 
 # 原型和原型链

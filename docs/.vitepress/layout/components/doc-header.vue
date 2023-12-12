@@ -1,5 +1,5 @@
 <script setup>
-import { NDivider, NIcon, } from 'naive-ui'
+import { NIcon, NTag } from 'naive-ui'
 import { onMounted, onUnmounted } from 'vue'
 import { useDocHeader } from '../use-case/use-doc-header'
 const {
@@ -15,10 +15,6 @@ const {
 } = useDocHeader()
 // 创建一个观察器实例并传入回调函数
 const observer = new MutationObserver(() => {
-  const descElement = document.getElementById('desc')
-  if(!descElement){
-    document.querySelector('h1').after(descRef.value)
-  }
   getDocHeaderInfo()
 });
 onMounted(() => {
@@ -49,6 +45,10 @@ onUnmounted(() => {
     <span v-show="page.frontmatter?.createTime">
       <NIcon class="icon" :component="CalendarTimes" />
       创建：{{ page.frontmatter?.createTime }}
+    </span>
+    <span v-show="page.frontmatter?.tags">
+      <NIcon class="icon" :component="CalendarTimes" />
+      标签：{{ page.frontmatter?.tags?.join('·') }}
     </span>
   </div>
 </template>
