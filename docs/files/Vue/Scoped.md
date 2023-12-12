@@ -1,9 +1,9 @@
 ---
-title: vue学习 --- Scoped样式‘隔离’
-date: 2022-09-15 09:11:49
-tags: scoped vue
-summary: scoped样式隔离的原理
-categories: Vue
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-07-23'
+title: 'scoped样式隔离的原理'
+tags: ['vue', 'css', 'scoped', '样式隔离']
 ---
 
 # scoped原理

@@ -1,20 +1,21 @@
 ---
-title: vue中的数据持久化存储
-date: 2022-06-26 10:42:05
-tags: vuex
-summary: 对vue中数据持久化存储的简单理解
-categories: Vue
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '数据持久化存储'
+tags: ['vue', '持久化']
 ---
 
-#### 为什么要做持久化存储
+# 持久化
+## 为什么要做持久化存储
 
 > 例如`token`、用户信息，当后端接口响应回来数据之后，我们一般会将数据存放到`vuex`中，以供其他组件方便使用，当页面刷新时，`vuex中`的数据就会消失，需要重新请求。
 >
 > > `JavaScript`运行过程中的数据都存储在内存中，刷新页面，内存会被清空。
 
-#### 实现
+## 实现
 
-##### 1. 通过`vue-js-cookie`
+### 1. 通过`vue-js-cookie`
 
 1. 安装
 

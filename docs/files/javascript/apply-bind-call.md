@@ -1,9 +1,9 @@
 ---
-title: js学习 --- apply、bind和call
-date: 2022-12-05 14:21:21
-tags: this绑定
-summary: 对于apply、bind和call的总结
-categories: JavaScript
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-12-05'
+title: '对于apply、bind和call的总结'
+tags: ['javascript', 'this']
 ---
 # apply、bind、call
 

@@ -1,9 +1,9 @@
 ---
-title: 设计模式学习 --- 观察者模式
-date: 2022-05-22 09:56:27
-summary: 对于观察者模式的一些简单理解
-tags: observe 观察者模式
-categories: DesignPattern
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-05-29'
+title: '设计模式-观察者模式'
+tags: ['设计模式', '观察者模式']
 ---
 
 #### 定义

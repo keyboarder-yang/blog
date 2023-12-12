@@ -1,9 +1,9 @@
 ---
-title: 微前端学习
-date: 2023-02-14 15:49:55
-tags: 微前端
-summary: 微前端学习
-categories: MicroFront
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2023-02-14'
+title: '微前端'
+tags: ['微前端']
 ---
 
 # 微前端

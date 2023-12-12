@@ -1,9 +1,9 @@
 ---
-title: js学习 --- 正则表达式
-date: 2022-06-13 23:38:02
-tags: 正则
-summary: 正则表达式的学习总结
-Categories: 正则表达式
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-13'
+title: '正则表达式'
+tags: ['javascript', '正则']
 ---
 
 # 正则表达式

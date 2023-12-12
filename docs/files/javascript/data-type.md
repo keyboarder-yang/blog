@@ -2,10 +2,7 @@
 author: 'keyboarder-yang'
 createTime: '2022-06-03'
 title: '数据类型'
-tags:
-  - 'files'
-  - 'javascript'
-  - '数据类型'
+tags: ['javascript', '数据类型']
 ---
 
 # 数据类型

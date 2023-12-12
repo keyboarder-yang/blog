@@ -48,7 +48,7 @@ onUnmounted(() => {
     </span>
     <span v-show="page.frontmatter?.tags">
       <NIcon class="icon" :component="CalendarTimes" />
-      标签：{{ page.frontmatter?.tags?.join('·') }}
+      标签：{{ page.frontmatter?.tags }}
     </span>
   </div>
 </template>

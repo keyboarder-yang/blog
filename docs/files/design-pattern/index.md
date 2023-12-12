@@ -1,9 +1,9 @@
 ---
-title: 设计模式学习
-date: 2022-05-16 22:09:55
-tags: 设计模式
-summary: 对于设计模式的一些简单理解
-categories: DesignPattern
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-05-29'
+title: '设计模式'
+tags: ['设计模式']
 ---
 
 # 设计模式

@@ -1,9 +1,9 @@
 ---
-title: vue学习 --- 回流和重绘
-date: 2022-07-23 15:31:49
-tags: 回流 重绘
-summary: 回流和重绘
-categories: Vue
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-07-23'
+title: '回流和重绘'
+tags: ['vue', '回流', '重绘']
 ---
 # 对于vue中回流和重绘的理解
 ## 简介

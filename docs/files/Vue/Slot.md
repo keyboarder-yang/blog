@@ -1,12 +1,13 @@
 ---
-title: vue学习 --- 插槽
-date: 2022-05-13 22:31:49
-tags: vue slot
-summary: 对于插槽slot的一些简单理解
-categories: Vue
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-05-13'
+title: 'slot插槽'
+tags: ['vue', 'slot', '插槽']
 ---
 
-### 分类
+# 插槽
+## 分类
 
 + 具名插槽
 

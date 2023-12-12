@@ -1,9 +1,9 @@
 ---
-title: js学习 --- this指向问题
-date: 2022-05-18 22:31:16
-tags: this指向
-summary: 对于This指向的一些简单理解
-categories: JavaScript
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-05-18'
+title: 'this指向问题'
+tags: ['javascript', 'this']
 ---
 
 # 介绍

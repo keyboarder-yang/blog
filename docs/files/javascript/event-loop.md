@@ -1,9 +1,9 @@
 ---
-title: js学习 --- 事件循环机制
-date: 2022-06-11 17:10:20
-tags: ['事件循环']
-summary: 对于事件循环机制、宏任务、微任务的总结
-categories: ['JavaScript']
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-11'
+title: '对于事件循环机制、宏任务、微任务的总结'
+tags: ['javascript', '事件循环']
 ---
 
 # 事件循环机制

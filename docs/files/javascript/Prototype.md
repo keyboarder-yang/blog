@@ -1,8 +1,9 @@
 ---
-title: js学习 --- 原型和原型链 
-date: 2022-06-03 14:21:21 
-tags: 
-  - '原型链'
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-03'
+title: '原型和原型链'
+tags: ['javascript', '原型', '原型链']
 ---
 
 # 原型和原型链

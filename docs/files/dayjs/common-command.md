@@ -1,9 +1,9 @@
 ---
-title: DayJs 中一些常用操作
-date: 2022-06-26 16:42:35
-tags: dayjs
-summary: 对dayjs中常用命令的总结
-categories: DayJs
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: 'dayjs中使用问题'
+tags: ['dayjs']
 ---
 
 #### 常用方法

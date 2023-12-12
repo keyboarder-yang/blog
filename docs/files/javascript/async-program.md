@@ -1,9 +1,9 @@
 ---
-title: js学习 --- 异步编程
-date: 2022-08-13 11:41:18
-tags: async 异步编程
-summary: 对应异步编程的理解
-categories: JavaScript
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-08-13'
+title: 'js中的异步编程'
+tags: ['javascript', 'async', '异步编程']
 ---
 
 # 异步编程的实现方式

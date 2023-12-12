@@ -23,7 +23,7 @@ export function useDocHeader() {
         }else {
             readImageTime = 89 + (imageCount - 10) * 3
         }
-        readTime.value = Math.ceil((words.value / 275)) + readImageTime / 60
+        readTime.value = Math.ceil((words.value / 275)) + Math.ceil(readImageTime / 60)
     }
     return {
         descRef,

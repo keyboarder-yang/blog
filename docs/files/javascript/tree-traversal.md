@@ -1,9 +1,9 @@
 ---
-title: js学习 --- 树的遍历
-date: 2022-06-17 22:54:07
-tags: 树
-summary: 对树的遍历总结
-categories: JavaScript
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-18'
+title: '树遍历'
+tags: ['javascript', 'tree']
 ---
 
 

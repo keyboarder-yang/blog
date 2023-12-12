@@ -1,9 +1,9 @@
 ---
-title: js学习 --- 递归
-date: 2022-06-16 19:24:26
-tags: 递归
-summary: 对于递归的简单理解
-categories: JavaScript
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-16'
+title: '递归'
+tags: ['javascript', '递归', '原型链']
 ---
 
 #  递归

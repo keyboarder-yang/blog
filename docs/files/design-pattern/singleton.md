@@ -1,9 +1,9 @@
 ---
-title: 设计模式学习 --- 单例模式
-date: 2022-05-17 00:02:43
-tags: 单例模式
-summary: 对于单例模式的一些简单理解
-categories: DesignPattern
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-05-29'
+title: '设计模式-单例模式'
+tags: ['设计模式', '单例模式']
 ---
 
 ### 定义

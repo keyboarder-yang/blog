@@ -1,9 +1,9 @@
 ---
-title: vue学习 --- render函数
-date: 2022-05-14 15:31:49
-tags: render vue
-summary: 对于VUE渲染函数的一些简单理解
-categories: Vue
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-05-14'
+title: 'vue中render函数'
+tags: ['vue', 'render']
 ---
 # 对于vue中render函数的简单理解
 ## 简介

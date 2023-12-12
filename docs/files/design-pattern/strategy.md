@@ -1,9 +1,9 @@
 ---
-title: 设计模式学习 --- 策略模式
-date: 2022-05-22 15:55:57
-tags: 策略模式
-summary: 对于策略模式的一些简单理解
-categories: DesignPattern
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-05-29'
+title: '设计模式-策略模式'
+tags: ['设计模式', '策略模式']
 ---
 
 #### 定义
