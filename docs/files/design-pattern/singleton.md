@@ -6,13 +6,15 @@ title: '设计模式-单例模式'
 tags: ['设计模式', '单例模式']
 ---
 
-### 定义
+# 单例模式
+
+## 定义
 
 > Ensure a class has only one instance  and provide a global point of access to it.
 >
 > 确保一个类只有一个实例，并全局提供这个实例。
 
-### 实现
+## 实现
 
 1. 通过类的静态方法（es6）
 
@@ -80,7 +82,7 @@ tags: ['设计模式', '单例模式']
    }
    ```
 
-#### 应用场景
+## 应用场景
 
 - 状态存储----vuex
 

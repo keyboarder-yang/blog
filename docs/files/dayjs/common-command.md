@@ -6,9 +6,10 @@ title: 'dayjs中使用问题'
 tags: ['dayjs']
 ---
 
-#### 常用方法
+# dayjs
 
-1. ##### 初始化日期/时间
+## 常用方法
+### 初始化日期/时间
 
    > 格式：`dayjs().formate(type)`，其中type可选列表如下
 
@@ -29,8 +30,6 @@ tags: ['dayjs']
    |  s   |     秒0-59      |  5   |
    |  ss  |     秒0-59      |  05  |
 
-   
-
-2. ##### 格式化日期时间
+## 格式化日期时间
 
    > 格式： `dayjs(value).formdate(type)`,value为待转换的值

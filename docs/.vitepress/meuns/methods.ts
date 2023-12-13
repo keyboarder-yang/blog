@@ -1,5 +1,5 @@
 import { MENU_ITEM } from "../interface";
-const methodsPrefixUrl: string = '/methods/'
+const methodsPrefixUrl: string = '/methods'
 /**
  * @description 方法 的菜单
  */
@@ -39,7 +39,6 @@ const methods: MENU_ITEM[] = [
             { text: '获取uuid码', link: `${methodsPrefixUrl}/common/uuid` },
             { text: '瀑布流（定位方式）', link: `${methodsPrefixUrl}/common/waterfall` },
             { text: '数字签名', link: `${methodsPrefixUrl}/common/canvas-signature` },
-            { text: '时间计数', link: `${methodsPrefixUrl}/common/time-count` },
         ]
     },
 ]

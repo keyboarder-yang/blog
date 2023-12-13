@@ -1,3 +1,11 @@
+---
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '判断两个数组是否交集'
+tags: ['array', '交集']
+---
+
 # hasIntersection
 
 ## 介绍

@@ -1,3 +1,11 @@
+---
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '获取数组中的真值'
+tags: ['array', '真值']
+---
+
 # getTruth
 
 ## 介绍

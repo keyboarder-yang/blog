@@ -1,3 +1,11 @@
+---
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '浮点数运算精度问题'
+tags: ['通用方法', '精度', '运算']
+---
+
 # operate
 
 ## 介绍

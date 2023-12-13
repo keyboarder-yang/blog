@@ -1,3 +1,11 @@
+---
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '生成uuid'
+tags: ['通用方法', 'uuid']
+---
+
 # uuid
 
 ## 介绍

@@ -2,7 +2,7 @@
 status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-05-15'
-title: '防抖和节流'
+title: '数据解构'
 tags: ['javascript', '解构']
 ---
 

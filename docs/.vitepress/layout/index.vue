@@ -1,7 +1,8 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme';
 import HomeBanner from "./components/home-banner.vue";
-import DocHeader from './components/doc-header.vue'
+import DocHeader from './components/doc-header.vue';
+import LinkArticle from './components/link-article.vue';
 const { Layout } = DefaultTheme;
 </script>
 
@@ -20,7 +21,9 @@ const { Layout } = DefaultTheme;
     <template #aside-top></template>
     <template #aside-bottom></template>
     <template #aside-outline-before></template>
-    <template #aside-outline-after>3</template>
+    <template #aside-outline-after>
+      <LinkArticle></LinkArticle>
+    </template>
     <template #aside-ads-before></template>
     <template #aside-ads-after></template>
     <!--  End doc  -->

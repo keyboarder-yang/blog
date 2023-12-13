@@ -3,7 +3,7 @@ import {
   createElementBlock,
   defineComponent,
   openBlock
-} from "./chunk-2US7RHRH.js";
+} from "./chunk-OOEHNQLD.js";
 import "./chunk-ZS7NZCD4.js";
 
 // node_modules/@vicons/fa/es/AccessibleIcon.js

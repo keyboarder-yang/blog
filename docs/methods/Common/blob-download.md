@@ -1,3 +1,11 @@
+---
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '二进制流文件下载'
+tags: ['通用方法', 'blob']
+---
+
 # blobDownload
 
 ## 介绍

@@ -9,8 +9,9 @@ export function useDocHeader() {
     const { page } = useData()
     function getDocHeaderInfo() {
         const descElement = document.getElementById('desc')
-        if(!descElement){
-            document.querySelector('h1').after(descRef.value)
+        const h1Element = document.querySelector('h1')
+        if(!descElement && h1Element){
+            h1Element.after(descRef.value)
         }
         const docDomContainer = window.document.querySelector('#VPContent')
         const wordsContent = docDomContainer?.querySelector('.container')?.textContent || ''

@@ -1,5 +1,5 @@
 import { MENU_ITEM } from '../interface';
-const filesPrefixUrl: string = '/files/'
+const filesPrefixUrl: string = '/files'
 
 /**
  * @description 文章 的菜单

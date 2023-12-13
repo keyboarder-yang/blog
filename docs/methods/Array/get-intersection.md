@@ -1,3 +1,11 @@
+---
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '取两个数组的交集'
+tags: ['array', '交集']
+---
+
 # getIntersection
 
 ## 介绍

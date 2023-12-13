@@ -1,3 +1,11 @@
+---
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '并发请求控制'
+tags: ['通用方法', '请求', '并发']
+---
+
 # concurrencyRequest
 
 ## 介绍

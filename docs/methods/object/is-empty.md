@@ -1,3 +1,11 @@
+---
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '判断一个对象是否为空'
+tags: ['object', 'empty']
+---
+
 # isEmpty
 
 ## 介绍

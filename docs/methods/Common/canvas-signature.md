@@ -1,3 +1,11 @@
+---
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '数字签名'
+tags: ['通用方法', '数字签名']
+---
+
 # canvasSignature
 
 ## 介绍

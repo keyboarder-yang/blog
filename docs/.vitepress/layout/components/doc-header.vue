@@ -1,6 +1,5 @@
 <script setup>
-import { NIcon, NTag } from 'naive-ui'
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted, onUnmounted, computed } from 'vue'
 import { useDocHeader } from '../use-case/use-doc-header'
 const {
   descRef,
@@ -17,8 +16,12 @@ const {
 const observer = new MutationObserver(() => {
   getDocHeaderInfo()
 });
+
+const tags = computed(() => {
+  return (page?.value?.frontmatter?.tags) || []
+})
 onMounted(() => {
-  document.querySelector('h1').after(descRef.value)
+  document.querySelector('h1')?.after(descRef.value)
   observer.observe(document.body, { childList: true, subtree: true })
 })
 onUnmounted(() => {
@@ -46,9 +49,10 @@ onUnmounted(() => {
       <NIcon class="icon" :component="CalendarTimes" />
       创建：{{ page.frontmatter?.createTime }}
     </span>
-    <span v-show="page.frontmatter?.tags">
+    <span v-show="tags.length">
       <NIcon class="icon" :component="CalendarTimes" />
-      标签：{{ page.frontmatter?.tags }}
+      标签：
+      <NTag v-for="(tag, key) in tags" :key="key" size="tiny" class="tagItem">{{ tag }}</NTag>
     </span>
   </div>
 </template>
@@ -73,5 +77,11 @@ onUnmounted(() => {
 }
 #desc{
   justify-content: start;
+}
+.tagItem{
+  border-radius: 0;
+}
+.tagItem + .tagItem{
+  margin-left: 5px;
 }
 </style>

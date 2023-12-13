@@ -1,3 +1,11 @@
+---
+status: 'done'
+author: 'keyboarder-yang'
+createTime: '2022-06-26'
+title: '获取对象中指定的属性值'
+tags: ['object']
+---
+
 # getDataFromObject
 
 ## 介绍
