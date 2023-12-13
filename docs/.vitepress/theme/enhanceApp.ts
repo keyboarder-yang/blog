@@ -1,5 +1,5 @@
 import { ElIcon, ElTag, ElDivider, ElTabs, ElTabPane, ElAvatar } from 'element-plus'
-import { Link, Clock, User, Edit, Calendar, CollectionTag } from '@element-plus/icons-vue'
+import { Link, Clock, User, Edit, Calendar, CollectionTag, Monitor } from '@element-plus/icons-vue'
 export async function customEnhanceApp(app: any) {
     app.component('Link', Link)
     app.component('Clock', Clock)
@@ -7,6 +7,7 @@ export async function customEnhanceApp(app: any) {
     app.component('Edit', Edit)
     app.component('Calendar', Calendar)
     app.component('CollectionTag', CollectionTag)
+    app.component('Monitor', Monitor)
     app.component('ElIcon', ElIcon)
     app.component('ElTag', ElTag)
     app.component('ElDivider', ElDivider)

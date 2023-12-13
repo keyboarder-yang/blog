@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
+    "animate.css": "^4.1.1",
     "commitizen": "^4.3.0",
     "cz-customizable": "^7.0.0",
     "element-plus": "^2.4.3",

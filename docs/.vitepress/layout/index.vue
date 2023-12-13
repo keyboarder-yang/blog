@@ -20,7 +20,7 @@ const { Layout } = DefaultTheme;
     <template #sidebar-nav-after></template>
     <template #aside-top></template>
     <template #aside-bottom></template>
-    <template #aside-outline-before>1</template>
+    <template #aside-outline-before></template>
     <template #aside-outline-after>
       <LinkArticle />
     </template>

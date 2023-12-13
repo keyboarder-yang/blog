@@ -25,7 +25,7 @@ const {
       <ElTabs v-model="defaultValue" size="small" @table-click="update">
         <ElTabPane v-for="(tag, index) in tags" :key="index" :name="tag" :label="tag">
           <div v-for="(article, index) in articleList" :key="index">
-            <a :href="`${site.base}${article.filePath}`">{{ article.title }}</a>
+            <a :href="`${site.base}${article.filePath}`" :title="article.title">{{index+1}}.{{ article.title }}</a>
           </div>
         </ElTabPane>
       </ElTabs>
@@ -50,17 +50,24 @@ const {
     }
   }
 
-  & .article-list a {
-    color: var(--vp-c-text-2);
+  & .article-list {
+    & a{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      display: inline-block;
+      color: var(--vp-c-text-1);
 
-    &:hover{
-      color: var(--vp-c-brand-1);
+      &:hover{
+        color: var(--vp-c-brand-1);
+      }
     }
   }
 }
 
 ::v-deep(.el-tabs .el-tabs__item) {
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-1);
 }
 
 ::v-deep(.el-tabs .el-tabs__item.is-active) {

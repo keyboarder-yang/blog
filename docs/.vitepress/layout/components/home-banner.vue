@@ -5,7 +5,7 @@ const { title, subTitle, description, inspiring } = useHomeBanner()
 
 <template>
   <div id="home-banner">
-    <div class="banner-content">
+    <div class="banner-content animate__animated animate__bounce">
       <div class="logo hidden-sm-and-up">
         <ElAvatar :size="100" shape="square" fit="fill" src="/blog/logo.png" />
       </div>
@@ -27,7 +27,7 @@ const { title, subTitle, description, inspiring } = useHomeBanner()
   text-align: center;
   width: 100vw;
   .banner-content {
-    margin-top: -200px;
+    margin-top: - 100px;
     .logo {
       margin-bottom: 100px;
     }

@@ -40,6 +40,12 @@ onUnmounted(() => {
       </ElIcon>
       阅读：约{{ readTime }} 分钟
     </span>
+    <span v-show="page.frontmatter?.status!=='done'">
+      <ElIcon class="icon">
+        <Monitor></Monitor>
+      </ElIcon>
+      状态：<ElTag size="small" type="danger" class="br-0">开发中</ElTag>
+    </span>
   </div>
   <div v-show="isShowDocHeader && (page.frontmatter?.author || page.frontmatter?.createTime)" id="desc" ref="descRef" class="hidden-sm-and-down">
     <span v-show="page.frontmatter?.author">
@@ -59,7 +65,7 @@ onUnmounted(() => {
         <CollectionTag></CollectionTag>
       </ElIcon>
       标签：
-      <ElTag v-for="(tag, key) in tags" :key="key" size="small" class="tagItem">{{ tag }}</ElTag>
+      <ElTag v-for="(tag, key) in tags" :key="key" size="small" class="tagItem br-0">{{ tag }}</ElTag>
     </span>
   </div>
 </template>
@@ -86,8 +92,10 @@ onUnmounted(() => {
   justify-content: start;
 }
 .tagItem{
-  border-radius: 0;
   margin-right: 5px!important;
   color: var(--vp-c-brand-1);
+}
+.br-0{
+  border-radius: 0;
 }
 </style>
