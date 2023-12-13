@@ -13,20 +13,22 @@ const {
 </script>
 
 <template>
-  <NDivider/>
-  <div id="link-article">
+  <ElDivider v-if="tags.length"/>
+  <div v-if="tags.length" id="link-article">
     <span class="title">
       相关文章
-      <NIcon :component="Link"/>
+      <ElIcon class="icon">
+        <Link />
+      </ElIcon>
     </span>
     <div class="article-list" :key="defaultValue">
-      <NTabs :defaultValue="defaultValue" size="small" @update:value="update">
-        <NTabPane v-for="(tag, index) in tags" :key="index" :name="tag" :tab="tag">
+      <ElTabs v-model="defaultValue" size="small" @table-click="update">
+        <ElTabPane v-for="(tag, index) in tags" :key="index" :name="tag" :label="tag">
           <div v-for="(article, index) in articleList" :key="index">
             <a :href="`${site.base}${article.filePath}`">{{ article.title }}</a>
           </div>
-        </NTabPane>
-      </NTabs>
+        </ElTabPane>
+      </ElTabs>
     </div>
   </div>
 </template>
@@ -40,11 +42,31 @@ const {
 
   & .title {
     font-weight: 600;
-  }
-
-  & .title span {
     display: flex;
     align-items: center;
+
+    & .icon{
+      margin-left: 5px;
+    }
   }
+
+  & .article-list a {
+    color: var(--vp-c-text-2);
+
+    &:hover{
+      color: var(--vp-c-brand-1);
+    }
+  }
+}
+
+::v-deep(.el-tabs .el-tabs__item) {
+  color: var(--vp-c-text-2);
+}
+
+::v-deep(.el-tabs .el-tabs__item.is-active) {
+  color: var(--vp-c-brand-1);
+}
+::v-deep(.el-tabs__active-bar){
+  background-color: var(--vp-c-brand-1);
 }
 </style>

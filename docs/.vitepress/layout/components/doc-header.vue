@@ -4,12 +4,9 @@ import { useDocHeader } from '../use-case/use-doc-header'
 const {
   descRef,
   page,
-  User,
-  CalendarTimes,
-  Edit,
-  Clock,
   readTime,
   words,
+  isShowDocHeader,
   getDocHeaderInfo
 } = useDocHeader()
 // 创建一个观察器实例并传入回调函数
@@ -21,8 +18,8 @@ const tags = computed(() => {
   return (page?.value?.frontmatter?.tags) || []
 })
 onMounted(() => {
-  document.querySelector('h1')?.after(descRef.value)
-  observer.observe(document.body, { childList: true, subtree: true })
+  window.document.querySelector('h1')?.after(descRef.value)
+  observer.observe(window.document.querySelector('#VPContent .container .content'), { childList: true, subtree: true })
 })
 onUnmounted(() => {
   observer.disconnect();
@@ -30,29 +27,39 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div id="doc-header">
+  <div v-show="isShowDocHeader" id="doc-header">
     <span v-show="words">
-      <NIcon class="icon" :component="Edit" />
+      <ElIcon class="icon">
+        <Edit></Edit>
+      </ElIcon>
       字数：{{ words }} 个字
     </span>
     <span v-show="readTime">
-      <NIcon class="icon" :component="Clock" />
+      <ElIcon class="icon">
+        <Clock></Clock>
+      </ElIcon>
       阅读：约{{ readTime }} 分钟
     </span>
   </div>
-  <div v-show="page.frontmatter?.author || page.frontmatter?.createTime" id="desc" ref="descRef">
+  <div v-show="isShowDocHeader && (page.frontmatter?.author || page.frontmatter?.createTime)" id="desc" ref="descRef" class="hidden-sm-and-down">
     <span v-show="page.frontmatter?.author">
-      <NIcon class="icon" :component="User" />
+      <ElIcon class="icon">
+        <User></User>
+      </ElIcon>
       作者：{{ page.frontmatter?.author }}
     </span>
     <span v-show="page.frontmatter?.createTime">
-      <NIcon class="icon" :component="CalendarTimes" />
+      <ElIcon class="icon">
+        <Calendar></Calendar>
+      </ElIcon>
       创建：{{ page.frontmatter?.createTime }}
     </span>
     <span v-show="tags.length">
-      <NIcon class="icon" :component="CalendarTimes" />
+      <ElIcon class="icon">
+        <CollectionTag></CollectionTag>
+      </ElIcon>
       标签：
-      <NTag v-for="(tag, key) in tags" :key="key" size="tiny" class="tagItem">{{ tag }}</NTag>
+      <ElTag v-for="(tag, key) in tags" :key="key" size="small" class="tagItem">{{ tag }}</ElTag>
     </span>
   </div>
 </template>
@@ -80,8 +87,7 @@ onUnmounted(() => {
 }
 .tagItem{
   border-radius: 0;
-}
-.tagItem + .tagItem{
-  margin-left: 5px;
+  margin-right: 5px!important;
+  color: var(--vp-c-brand-1);
 }
 </style>

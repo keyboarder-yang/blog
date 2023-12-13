@@ -18,15 +18,15 @@ export default {
         nav: [
             {
                 text: '文章笔记',
-                link: '/files/index'
+                link: '/files/'
             },
             {
                 text: '常用方法',
-                link: '/methods/index'
+                link: '/methods/'
             },
             {
                 text: '关于',
-                link: '/about/team'
+                link: '/about/team.md'
             },
         ],
         sidebar: {

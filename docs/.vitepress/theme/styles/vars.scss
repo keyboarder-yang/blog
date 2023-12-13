@@ -1,6 +1,7 @@
 html {
   --bg-gradient: 255, 255, 255, 0.1;
   --vp-c-brand-1: #18a058!important;
+  --vp-backdrop-bg-color: rgba(255, 255, 255, 1)!important;
   --vp-nav-bg-color: transparent!important;
   --vp-sidebar-bg-color: transparent!important;
   --vp-code-block-bg: rgba(24, 160, 88, .2)!important;
@@ -17,6 +18,7 @@ html {
 }
 
 html.dark {
+  --vp-backdrop-bg-color: rgba(0, 0, 0, 1)!important;
   --vp-c-divider: #757579;
   --vp-code-block-bg: rgba(255, 255, 255, .5)!important;
   --bg-gradient: 20, 20, 20, 0.7;

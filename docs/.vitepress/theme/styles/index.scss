@@ -27,7 +27,10 @@
   padding: 0!important;
 }
 
-.sidebar-highlight {
-  color: #fce674;
+.outline-link:hover{
+  color: var(--vp-c-brand-1)!important;
 }
 
+.vp-doc div[class*='language-'], .vp-block{
+  margin: 0;
+}

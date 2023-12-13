@@ -13,16 +13,16 @@ const { Layout } = DefaultTheme;
     <template #doc-bottom></template>
     <template #doc-footer-before></template>
     <template #doc-before>
-      <DocHeader></DocHeader>
+      <DocHeader />
     </template>
     <template #doc-after></template>
     <template #sidebar-nav-before></template>
     <template #sidebar-nav-after></template>
     <template #aside-top></template>
     <template #aside-bottom></template>
-    <template #aside-outline-before></template>
+    <template #aside-outline-before>1</template>
     <template #aside-outline-after>
-      <LinkArticle></LinkArticle>
+      <LinkArticle />
     </template>
     <template #aside-ads-before></template>
     <template #aside-ads-after></template>
@@ -30,7 +30,7 @@ const { Layout } = DefaultTheme;
 
     <!-- Start home -->
     <template #home-hero-before>
-      <home-banner></home-banner>
+      <HomeBanner />
     </template>
     <template #home-hero-info></template>
     <template #home-hero-image></template>

@@ -3,8 +3,8 @@ import {
   createElementBlock,
   defineComponent,
   openBlock
-} from "./chunk-OOEHNQLD.js";
-import "./chunk-ZS7NZCD4.js";
+} from "./chunk-5KUAFHYC.js";
+import "./chunk-LQ2VYIYD.js";
 
 // node_modules/@vicons/fa/es/AccessibleIcon.js
 var _hoisted_1 = {

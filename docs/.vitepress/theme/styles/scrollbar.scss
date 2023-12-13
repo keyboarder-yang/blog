@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: 1px;
+  height: 1px;
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -8,13 +8,13 @@
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  height: 4px;
-  border-radius: 4px;
+  height: 1px;
+  border-radius: 14px;
   background-color: var(--vp-c-brand-1);
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-  width: 4px;
-  border-radius: 4px;
+  width: 1px;
+  border-radius: 1px;
   background-color: var(--vp-c-brand-1);
 }

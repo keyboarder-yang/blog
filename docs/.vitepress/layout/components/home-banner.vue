@@ -6,10 +6,11 @@ const { title, subTitle, description, inspiring } = useHomeBanner()
 <template>
   <div id="home-banner">
     <div class="banner-content">
-      <h1>
-        <span class="name">{{ title }}</span>
-        <span class="motto">{{ subTitle }}</span>
-      </h1>
+      <div class="logo hidden-sm-and-up">
+        <ElAvatar :size="100" shape="square" fit="fill" src="/blog/logo.png" />
+      </div>
+      <div class="name">{{ title }}</div>
+      <div class="motto">{{ subTitle }}</div>
       <div class="inspiring-wrapper">
         {{ inspiring[0] }}
       </div>
@@ -25,8 +26,11 @@ const { title, subTitle, description, inspiring } = useHomeBanner()
   align-items: center;
   text-align: center;
   width: 100vw;
-  h1 {
-    text-align: center;
+  .banner-content {
+    margin-top: -200px;
+    .logo {
+      margin-bottom: 100px;
+    }
     .name {
       transition: all 0.25s ease-in-out 0.04s;
       transform: translateY(0px);
@@ -38,9 +42,10 @@ const { title, subTitle, description, inspiring } = useHomeBanner()
 
     .motto {
       position: relative;
+      text-align: right;
       bottom: 0;
-      font-size: 14px;
-      margin-left: 10px;
+      font-size: 16px;
+      margin: 20px 0;
 
       &::before {
         content: '- ';
