@@ -11,6 +11,7 @@ export function useDocHeader() {
         const descElement = document.getElementById('desc')
         const h1Element = document.querySelector('h1')
         if(h1Element){
+            h1Element.style.display = 'inline-block';
             isShowDocHeader.value = true
             if(!descElement){
                 h1Element.after(descRef.value)

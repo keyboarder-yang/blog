@@ -37,3 +37,25 @@
 .vp-doc div[class*='language-'], .vp-block{
   margin: 0;
 }
+
+// popover 自定义修改
+.customPopover .desc_info{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 5px 0;
+}
+
+// el-tag 样式修改
+.el-tag{
+  border-radius: 0;
+  margin-right: 5px!important;
+  color: var(--vp-c-brand-1);
+  & .el-tag__close{
+    color: var(--vp-c-brand-1);
+
+    &:hover{
+      background-color: var(--vp-c-brand-1);
+    }
+  }
+}

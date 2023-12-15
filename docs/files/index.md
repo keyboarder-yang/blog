@@ -1,12 +1,10 @@
 ---
-status: 'active'
+status: 'done'
 author: 'keyboarder-yang'
-createTime: '2022-12-17'
+createTime: '2022-07-17 15:30:28'
 ---
 
 # 从此开始...
-::: info 说明
-` * `表示文章还在更新
-:::
+个人笔记记录
 
 

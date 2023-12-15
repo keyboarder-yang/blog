@@ -6,6 +6,14 @@ const filesPrefixUrl: string = '/files'
  */
 const files: MENU_ITEM[] = [
     {
+        text: '浏览器',
+        items: [
+            { text: '事件循环', link: `${filesPrefixUrl}/browser/event-loop` },
+            { text: '浏览器渲染原理', link: `${filesPrefixUrl}/browser/browser-render` },
+            { text: '重绘和回流', link: `${filesPrefixUrl}/browser/repaint-reflow` },
+        ],
+    },
+    {
         text: 'javascript',
         items: [
             { text: '数据类型', link: `${filesPrefixUrl}/javascript/data-type` },
@@ -17,7 +25,6 @@ const files: MENU_ITEM[] = [
             { text: '闭包', link: `${filesPrefixUrl}/javascript/closure` },
             { text: '防抖和节流', link: `${filesPrefixUrl}/javascript/debounce-throttling` },
             { text: '异步编程', link: `${filesPrefixUrl}/javascript/async-program` },
-            { text: '事件循环', link: `${filesPrefixUrl}/javascript/event-loop` },
             { text: '递归', link: `${filesPrefixUrl}/javascript/recursion` },
             { text: '数据拷贝', link: `${filesPrefixUrl}/javascript/clone` },
             { text: '正则', link: `${filesPrefixUrl}/javascript/regexp` },
@@ -46,7 +53,6 @@ const files: MENU_ITEM[] = [
             { text: 'render函数', link: `${filesPrefixUrl}/vue/render` },
             { text: '插槽', link: `${filesPrefixUrl}/vue/slot` },
             { text: '数据持久化存储', link: `${filesPrefixUrl}/vue/state-persistence` },
-            { text: '重绘和回流', link: `${filesPrefixUrl}/vue/repaint-reflow` },
             { text: 'scoped原理', link: `${filesPrefixUrl}/vue/scoped` },
         ]
     },

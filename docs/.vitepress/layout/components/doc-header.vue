@@ -9,16 +9,17 @@ const {
   isShowDocHeader,
   getDocHeaderInfo
 } = useDocHeader()
-// 创建一个观察器实例并传入回调函数
-const observer = new MutationObserver(() => {
-  getDocHeaderInfo()
-});
-
 const tags = computed(() => {
   return (page?.value?.frontmatter?.tags) || []
 })
 onMounted(() => {
-  window.document.querySelector('h1')?.after(descRef.value)
+  // 创建一个观察器实例并传入回调函数
+  const observer = new MutationObserver(() => {
+    getDocHeaderInfo()
+  });
+  const h1Element = window.document.querySelector('h1');
+  h1Element.style.display = 'inline-block';
+  h1Element?.after(descRef.value);
   observer.observe(window.document.querySelector('#VPContent .container .content'), { childList: true, subtree: true })
 })
 onUnmounted(() => {
@@ -27,75 +28,63 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div v-show="isShowDocHeader" id="doc-header">
-    <span v-show="words">
-      <ElIcon class="icon">
-        <Edit></Edit>
-      </ElIcon>
-      字数：{{ words }} 个字
-    </span>
-    <span v-show="readTime">
-      <ElIcon class="icon">
-        <Clock></Clock>
-      </ElIcon>
-      阅读：约{{ readTime }} 分钟
-    </span>
-    <span v-show="page.frontmatter?.status!=='done'">
-      <ElIcon class="icon">
-        <Monitor></Monitor>
-      </ElIcon>
-      状态：<ElTag size="small" type="danger" class="br-0">开发中</ElTag>
-    </span>
-  </div>
-  <div v-show="isShowDocHeader && (page.frontmatter?.author || page.frontmatter?.createTime)" id="desc" ref="descRef" class="hidden-sm-and-down">
-    <span v-show="page.frontmatter?.author">
+  <div v-show="isShowDocHeader" id="desc" ref="descRef">
+    <ElPopover
+        placement="right-start"
+        :width="300"
+        trigger="hover"
+        popper-class="customPopover"
+    >
+      <template #reference>
+        <ElIcon class="icon" :size="24">
+          <ChatLineRound />
+        </ElIcon>
+      </template>
+      <div class="desc_info" v-show="page.frontmatter?.author">
       <ElIcon class="icon">
         <User></User>
       </ElIcon>
-      作者：{{ page.frontmatter?.author }}
-    </span>
-    <span v-show="page.frontmatter?.createTime">
+      作者：{{ page.frontmatter?.author || '-' }}
+    </div>
+      <div class="desc_info" v-show="page.frontmatter?.createTime">
       <ElIcon class="icon">
         <Calendar></Calendar>
       </ElIcon>
-      创建：{{ page.frontmatter?.createTime }}
-    </span>
-    <span v-show="tags.length">
+      创建：{{ page.frontmatter?.createTime || '-' }}
+    </div>
+      <div class="desc_info" v-show="words">
+        <ElIcon class="icon">
+          <Edit></Edit>
+        </ElIcon>
+        字数：{{ words }} 个字
+      </div>
+      <div class="desc_info" v-show="readTime">
+        <ElIcon class="icon">
+          <Clock></Clock>
+        </ElIcon>
+        阅读：约 {{ readTime }} 分钟
+      </div>
+      <div class="desc_info" v-show="tags.length">
       <ElIcon class="icon">
         <CollectionTag></CollectionTag>
       </ElIcon>
       标签：
-      <ElTag v-for="(tag, key) in tags" :key="key" size="small" class="tagItem br-0">{{ tag }}</ElTag>
-    </span>
+      <ElTag v-for="(tag, key) in tags" :key="key" size="small">{{ tag }}</ElTag>
+    </div>
+      <div class="desc_info" v-show="page.frontmatter?.status!=='done'">
+        <ElIcon class="icon">
+          <Monitor></Monitor>
+        </ElIcon>
+        状态：<ElTag size="small" type="danger" class="br-0">开发中</ElTag>
+      </div>
+    </ElPopover>
   </div>
 </template>
 
 <style scoped lang="scss">
-#doc-header, #desc{
-  color: var(--vp-c-text-2);
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12px 0;
-  & span{
-    display: flex;
-    align-items: center;
-    margin-right: 16px;
-
-    & .icon{
-      margin-right: 3px;
-    }
-  }
-}
 #desc{
-  justify-content: start;
-}
-.tagItem{
-  margin-right: 5px!important;
-  color: var(--vp-c-brand-1);
-}
-.br-0{
-  border-radius: 0;
+  display: inline-block;
+  padding-left: 3px;
+  vertical-align: top;
 }
 </style>

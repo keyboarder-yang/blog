@@ -2,7 +2,7 @@
 import DefaultTheme from 'vitepress/theme';
 import HomeBanner from "./components/home-banner.vue";
 import DocHeader from './components/doc-header.vue';
-import LinkArticle from './components/link-article.vue';
+import ArticleList from './components/article-list.vue';
 const { Layout } = DefaultTheme;
 </script>
 
@@ -22,7 +22,7 @@ const { Layout } = DefaultTheme;
     <template #aside-bottom></template>
     <template #aside-outline-before></template>
     <template #aside-outline-after>
-      <LinkArticle />
+      <ArticleList />
     </template>
     <template #aside-ads-before></template>
     <template #aside-ads-after></template>
