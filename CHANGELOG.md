@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/keyboarder-yang/blog/compare/v1.0.1...v1.0.2) (2023-12-15)
+
+
+### 📝 Documentation | 文档
+
+* **配置:** 更改提交说明 ([ffb49d9](https://github.com/keyboarder-yang/blog/commit/ffb49d9221228cd312f0b4bb723b5881a67c452f))
+
+
+### 🎉 Init | 初始化
+
+* **配置:** 初始化 ([7175f9a](https://github.com/keyboarder-yang/blog/commit/7175f9acf828e72c4cd43579d089f02f95b0a777))
+
 ### 1.0.1 (2023-12-07)
 
 
