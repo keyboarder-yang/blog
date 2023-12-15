@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-05-18'
 title: 'this指向问题'
-tags: ['javascript', 'this']
+tags: ['this']
 ---
 
 # 介绍

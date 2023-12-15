@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-06-13'
 title: '正则表达式'
-tags: ['javascript', '正则']
+tags: ['正则']
 ---
 
 # 正则表达式

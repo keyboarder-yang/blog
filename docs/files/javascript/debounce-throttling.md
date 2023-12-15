@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-02-15'
 title: '防抖和节流'
-tags: ['javascript', '防抖', '节流']
+tags: ['防抖', '节流', '闭包']
 ---
 # 防抖和节流
 

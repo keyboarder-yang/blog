@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-06-18'
 title: '树遍历'
-tags: ['javascript', 'tree']
+tags: ['tree']
 ---
 
 

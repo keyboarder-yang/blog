@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-06-11'
 title: 'new关键字'
-tags: ['javascript', 'new', 'this']
+tags: ['new', 'this']
 ---
 
 # New关键字

@@ -2,7 +2,7 @@
 author: 'keyboarder-yang'
 createTime: '2022-06-03'
 title: '数据类型'
-tags: ['javascript', '数据类型']
+tags: ['数据类型', '类型检测']
 ---
 
 # 数据类型

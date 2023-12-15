@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-12-05'
 title: '对于apply、bind和call的总结'
-tags: ['javascript', 'this']
+tags: ['this']
 ---
 # apply、bind、call
 

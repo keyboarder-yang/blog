@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-12-17'
 title: 'bem规范问题'
-tags: ['css', 'bem']
+tags: ['bem']
 ---
 
 # BEM命名规范

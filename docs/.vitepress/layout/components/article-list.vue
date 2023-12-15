@@ -19,11 +19,10 @@ const { site, page } = useData()
     <div class="article-list">
       <div v-for="(article, index) in articles" :key="index">
         <a
-            :class="{'active': article.title === page?.title }"
             :href="`${site.base}${article.filePath}`"
             :title="article.title"
         >
-          {{index+1}}.{{ article.title }}
+          {{ article.title }}
         </a>
       </div>
     </div>
@@ -43,10 +42,6 @@ const { site, page } = useData()
   }
   & .article-list {
     & a{
-
-      &.active{
-        color: var(--vp-c-brand-1);
-      }
       font-size: 13px;
       white-space: nowrap;
       overflow: hidden;

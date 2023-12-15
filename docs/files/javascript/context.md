@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-02-10'
 title: '执行上下文'
-tags: ['javascript', '上下文']
+tags: ['上下文', 'this']
 ---
 # 执行上下文
 

@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-12-18'
 title: 'css中文本溢出显示问题'
-tags: ['css', 'text-flow']
+tags: ['text-flow', '文本溢出']
 ---
 # 文本溢出显示
 

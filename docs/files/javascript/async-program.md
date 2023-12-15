@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-08-13'
 title: 'js中的异步编程'
-tags: ['javascript', 'async', '异步编程']
+tags: ['async', '异步编程']
 ---
 
 # 异步编程的实现方式

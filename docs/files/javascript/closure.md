@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-05-21'
 title: '闭包问题'
-tags: ['javascript', '闭包']
+tags: ['闭包']
 ---
 
 # 闭包

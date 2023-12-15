@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-06-16'
 title: '递归'
-tags: ['javascript', '递归']
+tags: ['递归']
 ---
 
 #  递归

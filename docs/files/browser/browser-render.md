@@ -2,7 +2,7 @@
 title: 浏览器渲染原理
 author: 'keyboarder-yang'
 createTime: '2023/12/14 10:18:06'
-tags: ['浏览器', '渲染']
+tags: ['渲染']
 status: 'done'
 ---
 

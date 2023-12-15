@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-12-10'
 title: '深拷贝'
-tags: ['javascript', '克隆']
+tags: ['克隆']
 ---
 
 

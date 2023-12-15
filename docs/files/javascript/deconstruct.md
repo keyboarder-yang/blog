@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-05-15'
 title: '数据解构'
-tags: ['javascript', '解构']
+tags: ['解构', 'es6']
 ---
 
 # 解构赋值

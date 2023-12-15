@@ -37,7 +37,7 @@ export function useArticleList() {
     function filterPages(pages: any[], tags: any[]): any[] {
         return pages.filter((article: any) => {
             const articleTags = article?.frontmatter.tags || []
-            return hasIntersection(tags, articleTags)
+            return hasIntersection(tags, articleTags) && article?.title !== page.value?.title
         })
     }
 

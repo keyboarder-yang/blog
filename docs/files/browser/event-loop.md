@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-06-11'
 title: '事件循环机制、宏任务、微任务'
-tags: ['javascript', '事件循环', '浏览器']
+tags: ['事件循环']
 ---
 
 # 事件循环机制

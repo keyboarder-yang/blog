@@ -3,7 +3,7 @@ status: 'done'
 author: 'keyboarder-yang'
 createTime: '2022-07-23'
 title: '回流和重绘'
-tags: ['浏览器', '回流', '重绘']
+tags: ['回流', '重绘']
 ---
 # 回流和重绘
 
