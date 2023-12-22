@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onUnmounted, computed } from 'vue'
+import { onMounted, onUnmounted, computed, ref } from 'vue'
 import { useDocHeader } from '../use-case/use-doc-header'
 const {
   descRef,
@@ -12,18 +12,19 @@ const {
 const tags = computed(() => {
   return (page?.value?.frontmatter?.tags) || []
 })
+const observer = ref(null)
 onMounted(() => {
   // 创建一个观察器实例并传入回调函数
-  const observer = new MutationObserver(() => {
+  observer.value = new MutationObserver(() => {
     getDocHeaderInfo()
   });
   const h1Element = window.document.querySelector('h1');
   h1Element.style.display = 'inline-block';
   h1Element?.after(descRef.value);
-  observer.observe(window.document.querySelector('#VPContent .container .content'), { childList: true, subtree: true })
+  observer.value.observe(window.document.querySelector('#VPContent .container .content'), { childList: true, subtree: true })
 })
 onUnmounted(() => {
-  observer.disconnect();
+  observer.value.disconnect();
 })
 </script>
 
@@ -75,7 +76,7 @@ onUnmounted(() => {
         <ElIcon class="icon">
           <Monitor></Monitor>
         </ElIcon>
-        状态：<ElTag size="small" type="danger" class="br-0">开发中</ElTag>
+        状态：<ElTag size="small" type="danger" style="color: red">开发中</ElTag>
       </div>
     </ElPopover>
   </div>

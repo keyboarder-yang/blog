@@ -14,6 +14,14 @@ const files: MENU_ITEM[] = [
         ],
     },
     {
+        text: '前端工程化',
+        items: [
+            { text: '介绍', link: `${filesPrefixUrl}/web-engineering/introduce` },
+            { text: '模块化和包管理', link: `${filesPrefixUrl}/web-engineering/modules` },
+            // { text: '重绘和回流', link: `${filesPrefixUrl}/web-engineering/repaint-reflow` },
+        ],
+    },
+    {
         text: 'javascript',
         items: [
             { text: '数据类型', link: `${filesPrefixUrl}/javascript/data-type` },
@@ -42,6 +50,7 @@ const files: MENU_ITEM[] = [
     {
         text: 'css',
         items: [
+            { text: '盒子模型', link: `${filesPrefixUrl}/css/box` },
             { text: 'BEM规范', link: `${filesPrefixUrl}/css/bem` },
             { text: '文本溢出显示问题', link: `${filesPrefixUrl}/css/text-flow` },
             { text: 'Grid布局', link: `${filesPrefixUrl}/css/grid` },
@@ -57,11 +66,7 @@ const files: MENU_ITEM[] = [
         ]
     },
     {
-        text: 'vue-source',
-        items: []
-    },
-    {
-        text: 'design-pattern',
+        text: '设计模式',
         items: [
             { text: '设计模式', link: `${filesPrefixUrl}/design-pattern/index` },
             { text: '单例模式', link: `${filesPrefixUrl}/design-pattern/singleton` },
@@ -71,27 +76,15 @@ const files: MENU_ITEM[] = [
         ]
     },
     {
-        text: 'micro-front',
+        text: '微前端',
         items: [
             { text: '介绍', link: `${filesPrefixUrl}/micro-front/introduce` },
-        ]
-    },
-    {
-        text: 'dayjs',
-        items: [
-            { text: 'dayjs常用命令', link: `${filesPrefixUrl}/dayjs/common-command` }
         ]
     },
     {
         text: 'element',
         items: [
             { text: '时间选择器', link: `${filesPrefixUrl}/element/date-picker` }
-        ]
-    },
-    {
-        text: 'webgis',
-        items: [
-            { text: '入门', link: `${filesPrefixUrl}/webgis/index` }
         ]
     },
     {
