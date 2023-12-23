@@ -11,7 +11,6 @@
     "release": "standard-version && git push --follow-tags"
   },
   "devDependencies": {
-    "naive-ui": "^2.35.0",
     "vitepress": "^1.0.0-rc.31",
     "vue": "^3.2.37"
   },

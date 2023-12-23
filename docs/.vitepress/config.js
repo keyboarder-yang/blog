@@ -11,6 +11,9 @@ export default {
             prev: '上一篇',
             next: '下一篇',
         },
+        outline: {
+            level: 'deep',
+        },
         outlineTitle: '文章目录',
         siteTitle: '@keyboarder-yang', // 网站标题
         subSiteTitle: '个人前端笔记', // 网站子标题（描述）

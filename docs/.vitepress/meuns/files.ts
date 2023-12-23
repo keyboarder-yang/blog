@@ -17,8 +17,8 @@ const files: MENU_ITEM[] = [
         text: '前端工程化',
         items: [
             { text: '介绍', link: `${filesPrefixUrl}/web-engineering/introduce` },
-            { text: '模块化和包管理', link: `${filesPrefixUrl}/web-engineering/modules` },
-            // { text: '重绘和回流', link: `${filesPrefixUrl}/web-engineering/repaint-reflow` },
+            { text: '模块化', link: `${filesPrefixUrl}/web-engineering/modules` },
+            { text: '包管理', link: `${filesPrefixUrl}/web-engineering/package-manage` },
         ],
     },
     {
