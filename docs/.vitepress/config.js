@@ -12,7 +12,7 @@ export default {
             next: '下一篇',
         },
         outline: {
-            level: 'deep',
+            level: [2, 3],
         },
         outlineTitle: '文章目录',
         siteTitle: '@keyboarder-yang', // 网站标题
