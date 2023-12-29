@@ -19,6 +19,7 @@ const files: MENU_ITEM[] = [
             { text: '介绍', link: `${filesPrefixUrl}/web-engineering/introduce` },
             { text: '模块化', link: `${filesPrefixUrl}/web-engineering/modules` },
             { text: '包管理', link: `${filesPrefixUrl}/web-engineering/package-manage` },
+            { text: '软链接和硬链接', link: `${filesPrefixUrl}/web-engineering/soft-hard-link` },
         ],
     },
     {

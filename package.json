@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "vitepress dev docs --host",
     "build": "vitepress build docs",
     "docs:serve": "vitepress serve docs --port 8888",
@@ -11,6 +12,7 @@
     "release": "standard-version && git push --follow-tags"
   },
   "devDependencies": {
+    "only-allow": "^1.2.1",
     "vitepress": "^1.0.0-rc.31",
     "vue": "^3.2.37"
   },
