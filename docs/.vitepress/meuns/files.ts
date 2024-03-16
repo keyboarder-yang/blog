@@ -1,5 +1,5 @@
 import { MENU_ITEM } from '../interface';
-const filesPrefixUrl: string = '/files'
+const filesPrefixUrl: string = '/files';
 
 /**
  * @description 文章 的菜单
@@ -20,6 +20,7 @@ const files: MENU_ITEM[] = [
             { text: '模块化', link: `${filesPrefixUrl}/web-engineering/modules` },
             { text: '包管理', link: `${filesPrefixUrl}/web-engineering/package-manage` },
             { text: '软链接和硬链接', link: `${filesPrefixUrl}/web-engineering/soft-hard-link` },
+            { text: 'webpack', link: `${filesPrefixUrl}/web-engineering/webpack` },
         ],
     },
     {
